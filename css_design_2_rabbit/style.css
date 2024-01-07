@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* variables */
+
+:root{
+    --primary-color: #D8542D;
+    --secondary-color: #F7E7D6;
+    --pimples-color: #F0DAAF;
+    --black : #000;
+    --white : #FFF;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #FDE2B7 0%, #F9F7F9 50%, #B3D4B2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rabbit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rabbit-inner{
+    position: absolute;
+    width: 23rem;
+    height: 16rem;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.rabbit-outer{
+    position: absolute;
+    width: 23rem;
+    height: 16rem;
+}
+.ear{
+    position: absolute;
+    width: 90px;
+    height: 120px;
+    background-color: var(--primary-color);
+    top: -12%;
+    border-radius: 50%;
+}
+.ear-left{
+    transform: rotate(-30deg);
+    left: -10%;
+}
+.ear-right{
+    transform: rotate(30deg);
+    right: -10%;
+}
+.inner-ear{
+    position: absolute;
+    width: 50px;
+    height: 90px;
+    background-color: var(--secondary-color);
+    top: 30%;
+    border-radius: 50%;
+}
+.inner-ear-left{
+    left: 25%;
+}
+.inner-ear-right{
+    right: 25%;
+}
+.eyebrow{
+    position: absolute;
+    width: 40px;
+    height: 15px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    border-top: 3px solid var(--black);
+    top: 35%;
+}
+.eyebrow-left{
+    transform: rotate(-20deg);
+    left: 65px;
+}
+.eyebrow-right{
+    transform: rotate(20deg);
+    right: 65px;
+}
+.eye{
+    position: absolute;
+    background-color: var(--black);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    top: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.eye-left{
+    left:80px;
+}
+.eye-right{
+    right:80px;
+}
+.dot{
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: var(--white);
+    border-radius: 50%;
+    top: 8px;
+    right: 10px;
+}
+.nose{
+    position: absolute;
+    background-color: var(--black);
+    width: 35px;
+    height: 25px;
+    border-radius: 50%;
+    top: 55%;
+    z-index: 1;
+}
+.nose-center-line{
+    position: absolute;
+    width: 5px;
+    height: 30px;
+    background-color: var(--black);
+    bottom: 60px;
+    z-index: 1;
+}
+.mouth{
+    position: absolute;
+    width: 65px;
+    height: 50px;
+    background-color: var(--primary-color);
+    border-bottom: 6px solid var(--black);
+    border-radius: 50%;
+    bottom: 55px;
+}
+.pimples{
+    position: absolute;
+    width: 35px;
+    height: 25px;
+    background-color: var(--pimples-color);
+    border-radius: 50%;
+    bottom: 25%;
+}
+.pimples-left{
+    left: 80px;
+}
+.pimples-right{
+    right: 80px;
+}
+
+@media screen and (max-width: 490px) {
+    .rabbit-inner,.rabbit-outer{
+        width: 16rem;
+        height: 12rem;
+    }
+
+    .ear{
+        width: 60px;
+        height: 100px;
+    }
+    .inner-ear{
+        width: 30px;
+        height: 65px;
+    }
+    .eyebrow{
+        width: 35px;
+        height: 15px;
+    }
+    .eyebrow-left{
+        left:45px;
+    }
+    .eyebrow-right{
+        right:45px;
+    }
+    .eye{
+        width: 25px;
+        height: 25px;
+    }
+    .eye-left{
+        left:55px;
+    }
+    .eye-right{
+        right: 55px;
+    }
+    .dot{
+        top: 8px;
+        right: 6px;
+    }
+    .nose{
+        width: 30px;
+        height: 20px;
+        top: 50%; 
+    }
+    .nose-center-line{
+        height: 35px;
+        bottom: 45px;
+    }
+    .mouth{
+        width: 60px;
+        height: 50px;
+        bottom: 40px;
+    }
+    .pimples{
+        width: 25px;
+        height: 15px;
+    }
+    .pimples-left{
+        left: 60px;
+    }
+    .pimples-right{
+        right: 60px;
+    }
+
+}

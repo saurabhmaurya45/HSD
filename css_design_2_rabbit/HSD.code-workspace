@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../task_2_demo_website"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "task_2_demo_website"
+	}
+}
